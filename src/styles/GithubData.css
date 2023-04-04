@@ -1,0 +1,57 @@
+.github-container {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-top:20px;
+    /* border: 2px solid gray; */
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.stats {
+   
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.calendar {
+   
+    width: 60%;
+    margin: auto;
+}
+
+.stat_Img {
+width:48%;
+}
+.streak_Img {   
+width:48%;
+}
+
+@media only screen and (max-width:1023px) {
+    .github-container{
+        height: auto;
+    }
+    .stats{
+        flex-direction: column;
+    }
+    .stat_Img {
+        width:100%;
+        }
+        .streak_Img {   
+        width:100%;
+        }
+
+        .calendar{
+            width: 100%;
+        }
+}
+
+@media only screen and (max-width: 768px) {
+    .stats {
+       
+    }
+}

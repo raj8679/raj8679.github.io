@@ -1,0 +1,112 @@
+.skills-parent-box {
+    width: 90vw;
+    height: 650px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+
+.skills-container{
+    /* border: 2px solid gray; */
+    
+    width: 96%;
+    height: 96%;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  
+}
+
+.title{
+    text-align: center;
+}
+.frontend{
+   
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.backend{
+    
+    width: 38%;
+    height: 200px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.skills-card{
+    width: 130px;
+    text-align: center; 
+    font-weight: 700;
+    padding: 10px;
+    transition: transform .2;
+}
+.skills-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transform: scale(1.1);
+   
+    
+}
+
+.skills-card-img {
+    width: 90%;
+    height: 60%;
+}
+
+@media only screen and (max-width:1023px) {
+    .skills-parent-box {
+        height: 770px;
+    }
+    .frontend{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        height: auto;
+        gap:10px;
+    }
+    .skills-card{
+        width: 110px;
+    }
+    .backend{
+        width: 60%;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .skills-card{
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .skills-parent-box{
+        height: 880px;
+    }
+    .frontend{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .skills-card{
+        width: 70px;
+    }
+    .backend{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:350px) {
+   .skills-card {
+    width: 50px;
+   }
+}
+
+@media only screen and (max-width:300px) {
+    .skills-card {
+        width: 40px;
+       }
+}

@@ -10,6 +10,8 @@
     justify-content: center;
     align-items: center;
    padding-bottom: 15px;
+   background-color: #0d1117ee;
+    color: white;
 }
 
 .Project-ContainerChild {
@@ -20,8 +22,10 @@
     gap: 3%;
 }
 .project-card {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
  height: 100%;
+ border-radius: 20px;
+ border: 2px solid teal;
 }
 .project-card > div {
     border-top: 1px solid rgba(128, 128, 128, 0.592);
@@ -35,6 +39,10 @@
 .Project-image {
     height: 60%;
 }
+.Project-image img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 .Project-image ~ div {
     height: 9%;
 }
@@ -47,7 +55,13 @@
     width:40px;
     height: 70%;
 }
-
+.project-github-link,.project-deployed-link {
+    background-color: teal;
+    color: white;
+}
+.project-github-link:hover,.project-deployed-link:hover {
+cursor: pointer;
+}
 @media only screen and (max-width:650px) {
     .Project-container  {
         height: auto;
@@ -56,7 +70,7 @@
     }
     .Project-ContainerChild {
         grid-template-columns: repeat(1,1fr);
-        gap: 10px;
+        gap: 25px;
         height: 100%;
     }
     .project-card h3{

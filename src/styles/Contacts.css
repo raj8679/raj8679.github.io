@@ -1,37 +1,41 @@
 #contact {
-    width: 100vw;
+    width: 90vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: auto;
     height: auto;
     margin-top: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 20px;
     color: white;
     /* background-color: #0d1117; */
     background-color: #0d1117ee;
 }
 
 .contact-child{
+    /* border: 1px solid red; */
     width: 50%;
     height: 100%;
     margin: auto;
     text-align: center;
 }
 .contact-content-one{
-    /* border: 1px solid black; */
-    width: 40%;
+    /* border: 1px solid red; */
+    width: 100%;
     margin: auto;
+    padding-top: 5px;
     text-align: left;
 }
 
 .contact-content-two{
-    /* border: 1px solid black; */
-    width: 40%;
+    /* border: 1px solid red; */
+    width: 100%;
     margin: auto;
     text-align: left;
 }
 
 .contact-content-three{
-    /* border: 1px solid black; */
-    width: 40%;
+    /* border: 1px solid red; */
+    width: 50%;
     height: 50px;
     margin: auto;
     display: flex;
@@ -49,5 +53,16 @@
 @media only screen and (max-width:500px) {
     .contact-content-two h3{
       font-size: 17px;
+    }
+    .contact-child {
+        width: 90%;
+    }
+}
+@media only screen and (max-width:300px) {
+    .contact-child {
+        width: 100%;
+    }
+    .contact-content-three {
+        width: 70%;
     }
 }

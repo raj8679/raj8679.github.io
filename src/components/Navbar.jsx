@@ -3,53 +3,34 @@ import "../styles/Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {RxCross2} from "react-icons/rx"
 import RajResume from "../assets/Raj-Resume.pdf";
+import * as Scroll from 'react-scroll';
 
 const Navbar = () => {
-const [modal, setModal] = useState(false)
+ const scroller = Scroll.scroller;
+const [modal, setModal] = useState(false);
+
+const handleScroll = (position) => {
+  scroller.scrollTo(position, {
+    duration: 1000,
+    delay: 100,
+    smooth: true,    
+  })
+  setModal(false)
+}
   const handleHomeScroll = () => {
     window.scrollTo({
       top:0,
       behavior:"smooth"
      });
-     setModal(!modal)
+     setModal(false)
   }
-
-  const handleAboutScroll = () => {
-    window.scrollTo({
-      top:50,
-      behavior:"smooth"
-     });
-     setModal(!modal)
-  }
-  const handleSkillsScroll = () => {
-    window.scrollTo({
-      top:1100,
-      behavior:"smooth"
-     });
-     setModal(!modal)
-  }
-  const handleProjectsScroll = () => {
-    window.scrollTo({
-      top:1800,
-      behavior:"smooth"
-     });
-     setModal(!modal)
-  }
-  const handleContactScroll = () =>{
-   window.scrollTo({
-    top:3200,
-    behavior:"smooth"
-   });
-   setModal(!modal)
-  }
-
+  
   const handleResume = () => {
     window.open(
       "https://drive.google.com/file/d/1QUxGX347Q70kcN_7NB33Y0qU1e8gY97G/view?usp=sharing",
       "_blank"
     );
   };
-  // console.log(window.innerWidth)
 
   return (
     <>
@@ -59,11 +40,11 @@ const [modal, setModal] = useState(false)
         </div>
         <div class="nav-right-menu">
           <h3 class="nav-link home"  onClick={handleHomeScroll}>Home</h3>
-          <h3 class="nav-link about" onClick={handleAboutScroll}>About Me</h3>
-          <h3 class="nav-link skills" onClick={handleSkillsScroll}>Skills</h3>
-          <h3 class="nav-link projects" onClick={handleProjectsScroll}>Projects</h3>
-          <h3 class="nav-link contact" onClick={handleContactScroll}>Contact</h3>
-          <button class="nav-resume" onClick={handleResume}>
+          <h3 class="nav-link about" onClick={() => handleScroll('scrollToAboutSection')}>About Me</h3>
+          <h3 class="nav-link skills" onClick={()=> handleScroll('scrollToSkillsSection')}>Skills</h3>
+         <h3 class="nav-link projects" onClick={()=> handleScroll('scrollToProjectsSection')}>Projects</h3>         
+          <h3 class="nav-link contact" onClick={()=> handleScroll('scrollToContactSection')}>Contact</h3>
+          {/* <button class="nav-resume" onClick={handleResume}> */}
           <a
             href={RajResume}
             download={true}
@@ -71,10 +52,11 @@ const [modal, setModal] = useState(false)
             rel="noreferrer"         
             class="nav-link resume"
             id="resume-button-1"
+             onClick={handleResume}
           >
             <h3>Resume</h3>
           </a>
-          </button>
+          {/* </button> */}
           
         </div>
         <div className="hamburger_menu">
@@ -88,10 +70,10 @@ const [modal, setModal] = useState(false)
       {modal ? 
       <div style={{display:"flex",flexDirection:"column",alignItems:"center",width:"100%", height:"100vh", position:"fixed", backgroundColor:"black",opacity:".9",paddingTop:"100px"}}>
       <div style={{color:"white"}}><h1 onClick={handleHomeScroll}>Home</h1></div>
-      <div style={{color:"white"}}><h1 onClick={handleAboutScroll}>About Me</h1></div>
-      <div style={{color:"white"}}><h1 onClick={handleSkillsScroll}>Skills</h1></div>
-      <div style={{color:"white"}}><h1 onClick={handleProjectsScroll}>Projects</h1></div>
-      <div style={{color:"white"}}><h1 onClick={handleContactScroll}>Contact</h1></div>
+      <div style={{color:"white"}}><h1 onClick={() => handleScroll('scrollToAboutSection')}>About Me</h1></div>
+      <div style={{color:"white"}}><h1 onClick={()=> handleScroll('scrollToSkillsSection')}>Skills</h1></div>
+      <div style={{color:"white"}}><h1 onClick={()=> handleScroll('scrollToProjectsSection')}>Projects</h1></div>
+      <div style={{color:"white"}}><h1 onClick={()=> handleScroll('scrollToContactSection')}>Contact</h1></div>
       </div>
       :
       null

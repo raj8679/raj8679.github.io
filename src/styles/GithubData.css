@@ -11,6 +11,8 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #0d1117ee;
+    color: white;
 }
 .stats {
    
@@ -18,10 +20,20 @@
     display: flex;
     justify-content: space-between;
 }
+.github-lang {  
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#github-top-langs {
+    width: 40%;
+}
+  
 .calendar {
-   
     width: 60%;
     margin: auto;
+    margin-top: 20px;
 }
 
 .stat_Img {
@@ -37,6 +49,7 @@ width:48%;
     }
     .stats{
         flex-direction: column;
+        gap: 10px;
     }
     .stat_Img {
         width:100%;
@@ -46,6 +59,9 @@ width:48%;
         }
 
         .calendar{
+            width: 100%;
+        }
+        #github-top-langs {
             width: 100%;
         }
 }

@@ -19,12 +19,11 @@ const About = () => {
       <div id="about" class="about section">
         <div class="about-box">
           <h1>About me</h1>
-          <h1 id="user-detail-name">Hi, I am Raj</h1>
-          <h2 id="user-detail-intro" class="about-intro">
+          <h1 id="user-detail-name">Hello, I am Raj</h1>
+          <h3 id="user-detail-intro" class="about-intro">
             An enthusiastic Full-Stack Web Deveploper. Have good command over
-            frontend and backend tools like JavaScript, CSS, React.js, Node.js, Express.js, MongoDB. Eager
-            to work for a Product-based company.
-          </h2>
+            frontend and backend tools like JavaScript, CSS, React.js, Node.js, Express.js, MongoDB. 
+          </h3>
           <button id="resume-button-2"  onClick={handleResume}>
             <a
               href={RajResume}
@@ -33,7 +32,7 @@ const About = () => {
               // target="_blank"
               // rel="noreferrer"            
             >
-             Resume
+            Resume            
             </a>
           </button>
           {/* <a href="https://drive.google.com/uc?id=1QUxGX347Q70kcN_7NB33Y0qU1e8gY97G&export=download"

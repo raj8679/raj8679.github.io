@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.20cd8c3c.css",
-    "main.js": "/static/js/main.d04f39c5.js",
+    "main.css": "/static/css/main.494d06de.css",
+    "main.js": "/static/js/main.09643a99.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/kfc_img.png": "/static/media/kfc_img.9aa584dc4cadb12b0b64.png",
     "static/media/BigBasket_img.png": "/static/media/BigBasket_img.05541d55b96e3fec7877.png",
+    "static/media/Health_Prime_img.png": "/static/media/Health_Prime_img.de24ccdf81687b2f53e4.png",
     "static/media/CoSchedule_img.png": "/static/media/CoSchedule_img.a4b000afb76efbdbc6ad.png",
-    "static/media/IndianExpress_img.png": "/static/media/IndianExpress_img.b8769d6b52f4dd916086.png",
     "static/media/Raj-Resume.pdf": "/static/media/Raj-Resume.5102944c7907a0f2035e.pdf",
     "static/media/chakra_logo.png": "/static/media/chakra_logo.15320604467d004df871.png",
     "static/media/RajImage.jpg": "/static/media/RajImage.b7cc21897e5511fcdeb5.jpg",
@@ -16,12 +16,12 @@
     "static/media/css_logo.svg": "/static/media/css_logo.39769a8bd378bf410d6b381a8d88fa35.svg",
     "index.html": "/index.html",
     "static/media/html_logo.svg": "/static/media/html_logo.8664168d5bc90b1a24396f85aadbf623.svg",
-    "main.20cd8c3c.css.map": "/static/css/main.20cd8c3c.css.map",
-    "main.d04f39c5.js.map": "/static/js/main.d04f39c5.js.map",
+    "main.494d06de.css.map": "/static/css/main.494d06de.css.map",
+    "main.09643a99.js.map": "/static/js/main.09643a99.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20cd8c3c.css",
-    "static/js/main.d04f39c5.js"
+    "static/css/main.494d06de.css",
+    "static/js/main.09643a99.js"
   ]
 }
